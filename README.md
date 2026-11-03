@@ -98,7 +98,8 @@ This document tracks the evolution of my home lab — from early experiments on 
   - Full load with GPU CUDA: 550–600 W  
 - **PSU Selection:**  
   - Must size for peak load  
-  - 850 W 80+ Gold/Platinum ideal for efficiency at 200–400 W typical draw  
+  - 850 W 80+ ideal for efficiency at 200–400 W typical draw, realistic 190-300 W draw 90% of time.
+  - Factory fit came with 925W PSU no issue.  
 - **BIOS/Enterprise Quirks:**  
   - Defaults often RAID, not AHCI → OS fails after CMOS reset  
   - Bifurcation must be enabled for ASUS Hyper card  
