@@ -49,8 +49,8 @@ This document tracks the evolution of my home lab — from early experiments on 
 - **Gap:** NVMe working VM backup to cold storage regularly and removeable hot swap drive. 
 - **Discovery:** Some VMs not easily replaceable, cannot rely ISO or VM builds being available.
 - **Permissions Issue:** VM files appeared locked to a single PC after being moved between hosts.
--                         Export VMs before backup or migration to avoid host-specific permissions,
--                         registrations, and access control issues.
+                          Export VMs before backup or migration to avoid host-specific permissions,
+                          registrations, and access control issues.
 - **Recovery Practice:** Test restores on alternate systems  
 
 ---
