@@ -13,7 +13,7 @@ This document tracks the evolution of my home lab — from early experiments on 
   - Disk pegged at 100% usage  
   - Mechanical HDD throughput only 8–20 MB/s  
 - **Upgrades:**  
-  - Crucial 1 TB SSD (~360 MB/s)  
+  - Crucial 1 TB SATA SSD (~500 MB/s)  
   - RAM increased to 16 GB (partial disassembly required)  
 - **Result:** Major uplift in VM responsiveness  
 - **Extra:** Replaced failing keyboard  
@@ -23,7 +23,9 @@ This document tracks the evolution of my home lab — from early experiments on 
 ## Phase 2: Professional Exposure (Logitrain Internship)
 - **Environment:** VMware ESXi booted from USB, dedicated VM storage drive  
 - **Observed Bottleneck:** Disk throughput limited (20–45 MB/s)  
-- **Lesson:** Storage throughput dominates virtualization performance  
+- **Lesson:** Storage throughput dominates virtualization performance
+- **Extra:** Obtained NVME m.2 for main running VM storage. Made running more than 2 VM possible.
+
 
 ---
 
