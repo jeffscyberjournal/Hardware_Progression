@@ -1,5 +1,6 @@
 # Hardware_Progression
-# 🖥️ Virtualization Journey: From Laptop Bottlenecks to Hardened Lab
+
+# Virtualization Journey: From Laptop Bottlenecks to Hardened Lab
 
 This document tracks the evolution of my home lab — from early experiments on a laptop to enterprise‑class workstations, networking, and backup strategies. Each phase highlights bottlenecks, upgrades, and lessons learned.
 
@@ -119,14 +120,14 @@ This document tracks the evolution of my home lab — from early experiments on 
 
 ---
 
-## 🔄 Alternative Considerations for what I should have done instead
+## Alternative Considerations for what I should have done instead
 - **NUC (6–8 cores):** Efficient, low power, but no PCIe x16 → no GPU; reliant on external/NAS storage  
-- **Dedicated NAS:** Smarter for cold storage than NVMe; slower but safer and expandable  
-- **mITX Build:** Supports discrete GPU, lower power than Xeon workstation, but higher upfront cost  
+- **Dedicated NAS:** Smarter for cold storage with mechanical HDD than NVMe; slower but safer and expandable  
+- **mITX Build:** Supports discrete GPU, lower power than Xeon workstation, but higher upfront cost. Eventually power might make it cheaper to run.  
 
 ---
 
-## 📌 Key Lessons Learned
+## Key Lessons Learned
 - **Empirical Diagnosis:** Always validate bottlenecks (disk vs CPU vs RAM)  
 - **I/O First:** Storage throughput is the primary limiter in virtualization  
 - **Incremental Upgrades:** SSD → NVMe → PCIe bifurcation, each step justified by measured gains  
