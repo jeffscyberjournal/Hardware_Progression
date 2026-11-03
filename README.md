@@ -87,7 +87,8 @@ This document tracks the evolution of my home lab — from early experiments on 
 - **Expansion:**  
   - Second workstation for backups/personal use (6‑core Xeon @ 3.5 GHz)  
   - Both fitted with ASUS Hyper cards (4 TB initially NVMe, eventually 4TB more in back up machine).  
-- **Lesson:** Install Hyper cards fully populated upfront — thermal paste adhesion makes later upgrades risky  
+- **Lesson:** Install Hyper cards fully populated upfront — thermal paste adhesion makes later upgrades risky.
+              Adding nvme is only possible via PCIe adapter, considered SATA, but that only works with NGFF m.2 or                   mSata.
 
 ---
 
