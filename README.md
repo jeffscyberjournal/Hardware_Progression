@@ -29,24 +29,28 @@ This document tracks the evolution of my home lab — from early experiments on 
 
 ---
 
-## Phase 3: High‑Performance Storage
-- **Procurement:** M.2 NVMe drives + ASUS Hyper card (PCIe Gen4, bifurcation support)  
+## Phase 3: High‑Performance Storage for VM Lab work
+- **Procurement:** Extra M.2 NVMe drives + ASUS Hyper card (PCIe Gen4, bifurcation support)  
 - **Performance Gains:**  
-  - 3,500 MB/s per drive  
-  - Up to 4,800 MB/s in parallel  
+  - 3,500 MB/s per drive (on GEN3 motherboard)  
+  - Up to 4,800 MB/s in parallel (No real benefit, 99% of time)  
 - **Architecture:**  
   - NVMe for active workloads  
-  - 2 TB HDD for cold storage/backups  
-- **RAID Consideration:** Rejected RAID on NVMe (wear/failure risk, RAID ≠ backup)  
+  - Enterprise grade HDD for cold storage/backups and removeable hot swappable  
+- **RAID Consideration:** Rejected RAID on NVMe (wear/failure risk, no real benefit in speed, RAID ≠ backup)
+- Private and main backups on removeable encrypted drives.
 
 ---
 
 ## Phase 4: Backup & Recovery Strategy
 - **Spare PC:** Runs Veeam for backups  
-- **Coverage:** Entire laptop + C: and D: drives on main PC  
-- **Gap:** NVMe workloads not backed up due to size  
-- **Discovery:** Some VMs not easily replaceable (e.g., Kali Gen2 requirement)  
-- **Permissions Issue:** VM files locked to single PC → keep neutral backups with simplified ACLs  
+- **Coverage:** Entire laptop + Main Lab PC + Spare Desktop PC
+                Desktop all working folders not on same drive as OS for easy reinstallation
+- **Gap:** NVMe working VM backup to cold storage regularly and removeable hot swap drive. 
+- **Discovery:** Some VMs not easily replaceable, cannot rely ISO or VM builds being available.
+- **Permissions Issue:** VM files appeared locked to a single PC after being moved between hosts.
+-                         Export VMs before backup or migration to avoid host-specific permissions,
+-                         registrations, and access control issues.
 - **Recovery Practice:** Test restores on alternate systems  
 
 ---
