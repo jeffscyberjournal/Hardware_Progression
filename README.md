@@ -22,10 +22,11 @@ This document tracks the evolution of my home lab — from early experiments on 
 ---
 
 ## Phase 2: Professional Exposure (Logitrain Internship)
+- Just after upgrade of desktop HP Z640 work station for VM lab, minimal setup, 32gb ram, dual cpu Xeon setup for VM performance.
 - **Environment:** VMware ESXi booted from USB, dedicated VM storage drive  
-- **Observed Bottleneck:** Disk throughput limited (20–45 MB/s)  
-- **Lesson:** Storage throughput dominates virtualization performance
-- **Extra:** Obtained NVME m.2 for main running VM storage. Made running more than 2 VM possible.
+- **Observed Bottleneck:** Disk throughput limited (20–45 MB/s).
+- **Lesson:** Storage throughput dominates virtualization performance. CPU and RAM was more than enough for 4-5 VM and hypervisor.
+- **Extra:** Obtained NVME m.2 for main running VM storage. Made running more than 3 VM possible.
 
 
 ---
