@@ -26,7 +26,7 @@ This document tracks the evolution of my home lab — from early experiments on 
 - **Environment:** VMware ESXi booted from USB, dedicated VM storage drive  
 - **Observed Bottleneck:** Disk throughput limited (20–45 MB/s).
 - **Lesson:** Storage throughput dominates virtualization performance. CPU and RAM was more than enough for 4-5 VM and hypervisor.
-- **Extra:** Obtained NVME m.2 for main running VM storage. Made running more than 3 VM possible.
+- **Extra:** Obtained NVME m.2 in phase 3, for main running VM storage. Made running more than 3 VM possible.
 
 
 ---
@@ -34,11 +34,11 @@ This document tracks the evolution of my home lab — from early experiments on 
 ## Phase 3: High‑Performance Storage for VM Lab work
 - **Procurement:** Extra M.2 NVMe drives + ASUS Hyper card (PCIe Gen4, bifurcation support)  
 - **Performance Gains:**  
-  - 3,500 MB/s per drive (on GEN3 motherboard)  
-  - Up to 4,800 MB/s in parallel (No real benefit, 99% of time)  
+  - 3,750 MB/s per drive (on GEN3 motherboard)  
+  - Up to 5,400 MB/s in parallel (No real benefit, 99% of time)  
 - **Architecture:**  
   - NVMe for active workloads  
-  - Enterprise grade HDD for cold storage/backups and removeable hot swappable  
+  - Enterprise grade HDD for cold storage/backups and removeable hot swappable.   
 - **RAID Consideration:** Rejected RAID on NVMe (wear/failure risk, no real benefit in speed, RAID ≠ backup)
 - Private and main backups on removeable encrypted drives.
 
@@ -47,7 +47,7 @@ This document tracks the evolution of my home lab — from early experiments on 
 ## Phase 4: Backup & Recovery Strategy
 - **Spare PC:** Runs Veeam for backups  
 - **Coverage:** Entire laptop + Main Lab PC + Spare Desktop PC
-                Desktop all working folders not on same drive as OS for easy reinstallation
+- Desktop all working folders not on same drive as OS for easy reinstallation
 - **Gap:** NVMe working VM backup to cold storage regularly and removeable hot swap drive. 
 - **Discovery:** Some VMs not easily replaceable, cannot rely ISO or VM builds being available.
 - **Permissions Issue:** VM files appeared locked to a single PC after being moved between hosts.
