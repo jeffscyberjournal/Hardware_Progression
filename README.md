@@ -46,14 +46,13 @@ This document tracks the evolution of my home lab — from early experiments on 
 
 ## Phase 4: Backup & Recovery Strategy
 - **Spare PC:** Runs Veeam for backups  
-- **Coverage:** Entire laptop + Main Lab PC + Spare Desktop PC
+- **Coverage:** Entire laptop + Main Lab PC active files + other folders of importance 
 - Desktop all working folders not on same drive as OS for easy reinstallation
-- **Gap:** NVMe working VM backup to cold storage regularly and removeable hot swap drive. 
+- **Gap:** NVMe working VM backup to cold storage regularly and removeable hot swap drive, depending on purpose
 - **Discovery:** Some VMs not easily replaceable, cannot rely ISO or VM builds being available.
 - **Permissions Issue:** VM files appeared locked to a single PC after being moved between hosts.
-                          Export VMs before backup or migration to avoid host-specific permissions,
-                          registrations, and access control issues.
-- **Recovery Practice:** Test restores on alternate systems  
+- Export active VMs to removeable drive and cold storage before migration to avoid host-specific permissions, registrations, and access control issues.
+- **Recovery Practice:** Test restores on alternate systems
 
 ---
 
