@@ -59,11 +59,12 @@ This document tracks the evolution of my home lab — from early experiments on 
 ## Phase 5: Network & Connectivity Evolution
 - **Initial Setup:** USB Wi‑Fi adapter + Cisco 3 layer switch
 - **Optimization:** Replaced Cisco switch with domestic router, to reduce power consumption (16watts down from around 70-80watts).
-- **Final Step:** Independent mini PC with pfSense firewall + Cat6a direct link → simpler, segmented, more secure, after experimentation with pfSense in VM first to determine its capability. Later abandoned as Mimi pc had habit of crashing. 
+- Router extends to different network IP range.
+- **Final Step:** Independent mini PC with pfSense firewall + Cat6a direct link → simpler, segmented, more secure, after experimentation with pfSense in VM first to determine its capability. Later abandoned as Mini pc had habit of crashing. Later discovered to be common issues with m.2 nvme interface. 
 
 ---
 
-## Phase 5.5: Hands‑On Networking & Certification Prep
+## Phase 5.1: Hands‑On Networking & Certification Prep
 - **Motivation:** CompTIA virtual labs were unstable → opted for real hardware  
 - **Hardware:** Cisco Layer 3 switch (second‑hand)  
 - **Software:**  
