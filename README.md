@@ -57,9 +57,9 @@ This document tracks the evolution of my home lab — from early experiments on 
 ---
 
 ## Phase 5: Network & Connectivity Evolution
-- **Initial Setup:** USB Wi‑Fi adapter + Cisco switch (200 W draw)  
-- **Optimization:** Replaced Cisco switch with domestic router (25 W)  
-- **Final Step:** Independent mini PC with pfSense firewall + Cat6a direct link → simpler, segmented, more secure, after experimentation with pfSense in VM first to determine its capability.  
+- **Initial Setup:** USB Wi‑Fi adapter + Cisco 3 layer switch
+- **Optimization:** Replaced Cisco switch with domestic router, to reduce power consumption (16watts down from around 70-80watts).
+- **Final Step:** Independent mini PC with pfSense firewall + Cat6a direct link → simpler, segmented, more secure, after experimentation with pfSense in VM first to determine its capability. Later abandoned as Mimi pc had habit of crashing. 
 
 ---
 
