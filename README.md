@@ -71,7 +71,7 @@ This document tracks the evolution of my home lab — from early experiments on 
   - Cisco Packet Tracer → lightweight, stable, accurate for CCNA  
   - GNS3 → heavier, integrates with real VMs  
 - **Learning Path:** Completed *Cisco_CCNA_Lab_Guide_v200‑301f*  
-- **Outcome:** Packet Tracer sufficient for CCNA prep; real hardware taught quirks (e.g., no power switch, must pull plug)  
+- **Outcome:** Packet Tracer sufficient for CCNA prep; real hardware taught quirks
 
 ---
 
