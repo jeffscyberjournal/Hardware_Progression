@@ -85,7 +85,7 @@ This document tracks the evolution of my home lab — from early experiments on 
   - Overprovisioned: rarely needed >12 cores for ~5 VMs  
   - Xeon clock speed lower than consumer CPUs  
   - Beneficial for Hashcat, but GPU (≈3000 CUDA cores) still dominated
-  - Required 2nd GPU if passthrough is required. CUDA work done in Windows and seperate OS on USB stick.
+  - Required 2nd GPU if passthrough is required. CUDA work done in Windows and seperate OS on USB stick. Virtualbox and limitation for passthrough, vmware did allow but,required guest additions installed. 
 - **Expansion:**  
   - Second workstation for backups/personal use (6‑core Xeon @ 3.5 GHz)  
   - Both fitted with ASUS Hyper cards (4 TB initially NVMe, eventually 4TB more in back up machine).  
