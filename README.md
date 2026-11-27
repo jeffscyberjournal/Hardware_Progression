@@ -101,10 +101,11 @@ This document tracks the evolution of my home lab — from early experiments on 
   - Must size for peak load  
   - 850 W 80+ ideal for efficiency at 200–400 W typical draw, realistic 190-300 W draw 90% of time.
   - Factory fit came with 925W PSU no issue.  
-- **BIOS/Enterprise Quirks:**  
+- **BIOS/Enterprise Quirks:** 
   - Defaults often RAID, not AHCI → OS fails after CMOS reset  
   - Bifurcation must be enabled for ASUS Hyper card  
   - RDP requires GPU if CPU lacks iGPU → hidden dependency  
+- 2nd X16 slot gets priority regardless of any gpu in any other slot. A second gpu might need to be removed if x16 slot gpu is not recognised and cmos battery removed and reset before main gpu is recognised, then install 2nd gpu can be installed. 
 - **Safeguards:**  
   - Document baseline configs (RAID/AHCI, bifurcation, virtualization flags)  
   - Keep USB recovery media ready  
