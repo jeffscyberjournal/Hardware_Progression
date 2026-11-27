@@ -82,15 +82,14 @@ This document tracks the evolution of my home lab — from early experiments on 
   - Nvidia Quadro M6000 GPU
   - Low price of $600, sounded like a good starting point.
 - **Realization:**  
-  - Overprovisioned: rarely needed >12 cores for ~5 VMs  
+  - Overprovisioned: rarely needed >12 cores for ~6 VMs  
   - Xeon clock speed lower than consumer CPUs  
   - Beneficial for Hashcat, but GPU (≈3000 CUDA cores) still dominated
-  - Required 2nd GPU if passthrough is required. CUDA work done in Windows and seperate OS on USB stick. Virtualbox and limitation for passthrough, vmware did allow but,required guest additions installed. 
+  - Required 2nd GPU if passthrough is required. Virtualbox and limitation for passthrough, vmware did allow but,required guest additions installed. 
 - **Expansion:**  
   - Second workstation for backups/personal use (6‑core Xeon @ 3.5 GHz)  
   - Both fitted with ASUS Hyper cards (4 TB initially NVMe, eventually 4TB more in back up machine).  
-- **Lesson:** Install Hyper cards fully populated upfront — thermal paste adhesion makes later upgrades risky.
-              Adding nvme is only possible via PCIe adapter, considered SATA, but that only works with NGFF m.2 or                   mSata.
+- **Lesson:** Install Hyper cards fully populated upfront — thermal paste adhesion makes later upgrades risky. Adding nvme is only possible via PCIe adapter, considered SATA adapter, however that only works with NGFF (SATA) m.2 or mSata.
 
 ---
 
