@@ -134,9 +134,8 @@ This document tracks the evolution of my home lab — from early experiments on 
 - **Incremental Upgrades:** SSD → NVMe → PCIe bifurcation, each step justified by measured gains  
 - **Backups vs Redundancy:** RAID ≠ backup; true resilience requires versioned, portable backups  
 - **VM Portability:** Test restores on alternate systems to confirm portability, extra drive space and CPU cores allow for full replication in my circumstance, drive space is main requirement for this on NUC or mITX
-- **Networking:** Packet Tracer is sufficient for CCNA; GNS3 adds realism; real hardware teaches quirks  
-- **Power Economics:** PSU efficiency and idle draw matter as much as peak performance  
+- **Networking:** Packet Tracer is sufficient for CCNA; GNS3 adds realism, being vm environment adds more versatility and practicality than Cisco Packet Tracer; real hardware teaches quirks, but adds unnecessary power drain when not required 
+- **Power Economics:** PSU efficiency and idle draw matter as much as peak performance. Separate vm lab workstation was best solution to ensure power consumption was aligned with usage purpose. One off vm tests often more practical on laptop or backup PC.
 - **Enterprise Quirks:** BIOS defaults, bifurcation, GPU dependencies — document configs for recovery  
-- **Segmentation:** Isolate workloads (personal vs lab) to reduce risk  
-- **Efficiency vs Capability:** NUCs, workstations, and mITX each have trade‑offs in cost, expandability, and power  
+
 
